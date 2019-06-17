@@ -94,9 +94,9 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="R1Q-Vg-jPO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.86276501419999996" green="0.8627296686" blue="0.86274600030000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <sections>
-                            <tableViewSection headerTitle="Section-1" id="Mk8-Qu-H0K">
+                            <tableViewSection headerTitle="Alarm" id="Mk8-Qu-H0K">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="365" id="HBA-0R-NDK">
                                         <rect key="frame" x="0.0" y="28" width="414" height="365"/>
@@ -108,6 +108,7 @@
                                                 <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="edS-Z6-5hb">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="365"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.96202054632589806" green="0.95737310407311604" blue="0.96666798857868019" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="582495538.90789998">
                                                         <!--2019-06-17 20:18:58 +0000-->
                                                     </date>
@@ -123,7 +124,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter alarm title here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GmR-cO-Css">
-                                                    <rect key="frame" x="8" y="8" width="398" height="30"/>
+                                                    <rect key="frame" x="8" y="8" width="398" height="28"/>
+                                                    <color key="backgroundColor" red="0.86276501419999996" green="0.8627296686" blue="0.86274600030000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -134,14 +136,16 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstItem="GmR-cO-Css" firstAttribute="centerX" secondItem="abu-aK-XUe" secondAttribute="centerX" id="Dvj-4e-eLn"/>
-                                                <constraint firstItem="GmR-cO-Css" firstAttribute="top" secondItem="abu-aK-XUe" secondAttribute="topMargin" constant="-3" id="Fr0-iH-a89"/>
-                                                <constraint firstItem="GmR-cO-Css" firstAttribute="leading" secondItem="abu-aK-XUe" secondAttribute="leadingMargin" constant="-12" id="ulL-qA-Xin"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="GmR-cO-Css" secondAttribute="bottom" constant="-3" id="0hg-1t-C3m"/>
+                                                <constraint firstItem="GmR-cO-Css" firstAttribute="leading" secondItem="abu-aK-XUe" secondAttribute="leadingMargin" constant="-12" id="3hO-TF-Eg1"/>
+                                                <constraint firstItem="GmR-cO-Css" firstAttribute="centerX" secondItem="abu-aK-XUe" secondAttribute="centerX" id="UCL-Ap-Tf9"/>
+                                                <constraint firstItem="GmR-cO-Css" firstAttribute="centerY" secondItem="abu-aK-XUe" secondAttribute="centerY" id="sET-x1-Ytk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kxp-kR-VvO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="kxp-kR-VvO">
                                         <rect key="frame" x="0.0" y="437" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kxp-kR-VvO" id="YYb-C6-PzA">
@@ -164,6 +168,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.86276501419999996" green="0.8627296686" blue="0.86274600030000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
                                                 <constraint firstItem="9vn-Fz-HkQ" firstAttribute="leading" secondItem="YYb-C6-PzA" secondAttribute="leadingMargin" constant="55" id="7cz-Tc-J5Z"/>
                                                 <constraint firstItem="9vn-Fz-HkQ" firstAttribute="centerY" secondItem="YYb-C6-PzA" secondAttribute="centerY" id="Twx-gk-32g"/>

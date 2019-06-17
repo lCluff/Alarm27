@@ -27,11 +27,11 @@ class AlarmController: AlarmScheduler {
     }
     
     func update(alarm: Alarm, name: String, fireDate: Date, isEnabled: Bool) {
+        cancelUserNotification(for: alarm)
         alarm.name = name
         alarm.fireDate = fireDate
         alarm.isEnabled = isEnabled
         scheduleUserNotification(for: alarm)
-        cancelUserNotification(for: alarm)
        
         saveToPersistentStore()
     }

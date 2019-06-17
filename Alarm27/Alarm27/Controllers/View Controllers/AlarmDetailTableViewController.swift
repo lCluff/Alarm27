@@ -38,7 +38,7 @@ class AlarmDetailTableViewController: UITableViewController {
     func setUpAlarmButton(){
         switch alarmIsOn {
         case true:
-            alarmEnabledButton.backgroundColor = UIColor.lightGray
+            alarmEnabledButton.backgroundColor = UIColor.darkGray
             alarmEnabledButton.setTitle("Enabled", for: .normal)
         case false:
             alarmEnabledButton.backgroundColor = UIColor.red

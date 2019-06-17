@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol AlarmTableViewCellDelegate: class {
+    func alarmWasToggled(sender: AlarmDetailsTableViewCell)
+}
+
+
 class AlarmDetailsTableViewCell: UITableViewCell {
     
     //MARK: - Outlets

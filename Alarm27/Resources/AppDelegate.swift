@@ -14,17 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     var window: UIWindow?
     
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         AlarmController.sharedInstance.alarms = AlarmController.sharedInstance.loadFromPersistentStore()
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]){  (accepted, error) in
-            if !accepted{
-                print("Notification access has been denied")
-            }
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.badge, .alert, .sound]) {(granted, error) in
         }
-        
+        application.registerForRemoteNotifications()
         UNUserNotificationCenter.current().delegate = self
-        
         return true
     }
     
